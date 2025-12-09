@@ -34,10 +34,10 @@ RUN rustup component add clippy
 RUN rustup component add llvm-tools-preview
 
 # Required for REPL
-RUN cargo install cargo-watch
+#RUN cargo install cargo-watch
 
 # Required for SCA
-RUN cargo install cargo-audit
+#RUN cargo install cargo-audit
 
 # Super dirty hack to allow and speed-up builds in REPL mode (`make watch`)
 RUN chmod -R o+rwx /usr/local/cargo/

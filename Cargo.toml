@@ -1,5 +1,15 @@
 # SPDX-FileCopyrightText:  Copyright © 2022 The Fern Authors <team@fernproxy.io>
 # SPDX-License-Identifier: Apache-2.0
+[profile.release]
+debug = false
+
+[dependencies]
+# ... normal stuff only
+
+[dev-dependencies]
+# leave `grcov` here but:
+optional = true
+
 
 [workspace]
 

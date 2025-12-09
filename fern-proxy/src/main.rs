@@ -19,8 +19,8 @@ let own_addr = format!("0.0.0.0:{}", port);
     // let own_addr = std::env::var("ADDRESS").unwrap_or_else(|_| "0.0.0.0:30000".into());
     log::trace!("listener addr: {}", own_addr);
 
-    let srv_addr = std::env::var("SERVER").expect("SERVER env variable is undefinied");
-    log::trace!("proxied Server addr: {}", srv_addr);
+    //let srv_addr = std::env::var("SERVER").expect("SERVER env variable is undefinied");
+    //log::trace!("proxied Server addr: {}", srv_addr);
 
     //TODO(ppiotr3k): refactor and move config initialization out of `main`
     // Get settings defined in `CONFIG_FILE`.

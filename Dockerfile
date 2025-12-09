@@ -16,7 +16,7 @@ WORKDIR /app
 CMD [ "./fern-proxy" ]
 
 
-//FROM rust:1.64-slim AS dev-env
+FROM rust:1.64-slim AS dev-env
 
 # Required by `openssl-sys` crate, a dependency for `grcov` (code coverage)
 RUN apt-get update \

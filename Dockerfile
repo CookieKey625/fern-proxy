@@ -30,7 +30,7 @@ RUN rustup component add rustfmt
 RUN rustup component add clippy
 
 # Required for code coverage measurement
-//RUN cargo install grcov
+#RUN cargo install grcov
 RUN rustup component add llvm-tools-preview
 
 # Required for REPL
